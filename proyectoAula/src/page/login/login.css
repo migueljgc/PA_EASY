@@ -1,0 +1,32 @@
+.Trab {
+    display: grid;
+    grid-template-columns: 2fr 8.4fr 5.5fr 2.1fr;
+    grid-template-rows: 0.3fr 1.2fr 1.4fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . ."
+        ". col col ."
+        ". col col ."
+        ". . . .";
+}
+
+
+
+
+.col {
+    grid-area: col;
+    border-radius: 40px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.Trab {
+    align-items: center;
+    background: #87CEEB;
+    background: linear-gradient(to right, #800080, #3c3cd8);
+
+
+}
