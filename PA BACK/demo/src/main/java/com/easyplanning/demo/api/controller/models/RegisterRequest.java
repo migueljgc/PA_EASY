@@ -1,35 +1,23 @@
-package com.easyplanning.demo.domain.dto;
-
+package com.easyplanning.demo.api.controller.models;
 
 import com.easyplanning.demo.persistence.entity.Rol;
+
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
+@Builder
 @NoArgsConstructor
-
-public class UsuarioDTO  {
-
-
+@AllArgsConstructor
+public class RegisterRequest {
     private String nombre;
-
-
     private String apellido;
-
-
     private String telefono;
-
-
     private String documento;
-
     private String email;
-
     private String clave;
-
     private Rol rol;
 
 }
